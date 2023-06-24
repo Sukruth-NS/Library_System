@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library System</title>
+  <style>
+    /* CSS styles for the sticky navigation bar */
+    /* Add your own styling to customize the navigation bar */
+    /* Example styles provided */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        position: sticky;
+        top: 0;
+        background-color: #000000;
+        padding: 10px;
+    }
+
+  
+    /* Style for the last link */
+    .navbar a:last-child {
+        align-items: right;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    /* Style for the navigation links */
+    .navbar a {
+        align-items: left;
+        margin-right: 10px;
+        text-decoration: none;
+        color: #f8f8f8;
+    }
+
+   
+    .section1{
+        
+        background-color: white;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .section2{
+        
+        margin-top: 25px;
+        background-color: white;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 25px;
+        border-radius: 5px;
+    }
+    /* Additional CSS styles for the table and form */
+    /* Add your own styling to customize the table and form */
+    /* Example styles provided */
+    table {
+      border-collapse: collapse;
+      /* margin-left: 15px;
+      margin-right: 15px; */
+
+      width: 96%;
+
+      
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    th {
+      background-color: white;
+      padding: 10px;
+      text-align: left;
+    }
+    form {
+      margin-top: 20px;
+      font-family: Arial, sans-serif;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="email"], input[type="date"], input[type="number"], input[type="password"] {
+     
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 96%;
+     
+    }
+    input[type="submit"] {
+      background-color:black;
+      width: 100%;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+      
+    }
+
+
+  </style>
+</head>
+<body style="background-color: lightgrey;">
+    <div class="navbar">
+        <a href="#">Library System</a>
+        <div>
+          <a href="#books">Books</a>
+          <a href="#register">Register</a>
+          <a href="#contact">Contact Us</a>
+          <a href="#logout">Logout</a>
+        </div> 
+    </div>
+
+  <section class="section1">
+  <h1 id="books" style="padding: 15px;">Books</h1>
+  <table style="margin-left: 15px;margin-right: 15px; margin-bottom: 15px;">
+    <thead>
+      <tr>
+        <th>Book ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Availability</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>
+            <a href="" style="color: blue;">Book Title 1</a><br>
+          <table>
+            <br>
+            <tr><td>Publication Date: 2000</td></tr>
+            <tr><td>Page Count: 250</td></tr>
+            <tr><td>ISBN: 123-4567890123</td></tr>
+          </table>
+        </td>
+        <td>Author Name 1</td>
+        <td>Genre 1</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td >
+            <a href="" style="color: blue;">Book Title 2</a><br>
+            <table >
+                <br>
+                <tr><td>Publication Date: 2005</td></tr>
+                <tr><td>Page Count: 300</td></tr>
+                <tr><td>ISBN; 123-4567890456</td></tr>
+            </table>
+        </td>
+        <td>Author Name 2</td>
+        <td>Genre 2</td>
+        <td>Not Available</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td >
+            <a href="" style="color: blue;">Book title 3</a><br>
+            <table >
+                <br>
+                <tr><td>Publication Date: 2010</td></tr>
+                <tr><td>Page Count: 350</td></tr>
+                <tr><td>ISBN; 123-4567890789</td></tr>
+            </table>
+        </td>
+        <td>Author Name 3</td>
+        <td>Genre 3</td>
+        <td>Available</td>
+    </tr>
+    </tbody>
+  </table>
+</section>
+<section class="section2">
+  <h1 id="register" style="padding: 15px;font-weight: bolder; margin-top: 30px;">Register</h1>
+  <form>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="lastName" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" required>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" min="5" max="100" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+
+  <label for="confirmPassword">Confirm Password:</label>
+  <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+  <input type="submit" value="Register">
+  </form>
+</section>
+
+</body>
+</html>
