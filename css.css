@@ -5,7 +5,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center; 
     position: sticky;
     top: 0;
     background-color: #000000;
@@ -25,6 +25,10 @@
     margin-right: 10px;
     text-decoration: none;
     color: #f8f8f8;
+}
+
+.navbar a:hover{
+  color:#d81a13;
 }
 
 
